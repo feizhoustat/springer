@@ -43,7 +43,6 @@ NULL
 #' the independence working correlation will be used.
 #' Please check the references for more details.
 #' @examples
-#' \dontrun{
 #' data("dat")
 #' ##load the clinical covariates, environment factors, genetic factors and response from the
 #' ##"dat" file
@@ -67,7 +66,6 @@ NULL
 #' tp = length(intersect(index, pos))
 #' fp = length(pos) - tp
 #' list(tp=tp, fp=fp)
-#' }
 
 #'
 #' @export
@@ -130,7 +128,7 @@ springer <- function(clin=NULL,e,g,y,beta0,func,corr,structure,lam1,lam2,maxits=
         diff=mean(abs(beta.new-beta))
         converge = (diff < 1e-3)
         iter = iter+1
-        cat("iter",iter,"diff",diff,"\n")
+        #cat("iter",iter,"diff",diff,"\n")
       }
   coef=beta.new
   coef[abs(coef)<tol]=0
