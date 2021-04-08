@@ -18,7 +18,7 @@ Recently, regularized variable selection has emerged as a power tool to identify
 
 ## Example
 
-    library(interep)
+    library(springer)
     data("dat")
     ##load the clinical covariates, environment factors, genetic factors and response from the
     ##"dat" file
