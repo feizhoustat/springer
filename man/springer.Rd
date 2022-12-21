@@ -73,7 +73,6 @@ the independence working correlation will be used.
 Please check the references for more details.
 }
 \examples{
-\dontrun{
 data("dat")
 ##load the clinical covariates, environment factors, genetic factors and response from the
 ##"dat" file
@@ -97,6 +96,5 @@ pos = which(beta != 0)
 tp = length(intersect(index, pos))
 fp = length(pos) - tp
 list(tp=tp, fp=fp)
-}
 
 }

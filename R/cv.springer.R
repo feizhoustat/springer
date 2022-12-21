@@ -31,17 +31,15 @@ NULL
 
 cv.springer <- function(clin=NULL, e, g, y, beta0, lambda1, lambda2, nfolds, func, corr, structure, maxits=30, tol=0.001){
   n=dim(y)[1]
+  k=dim(y)[2]
   q=dim(e)[2]
   p1=dim(g)[2]
   len1=length(lambda1)
   len2=length(lambda2)
 
-  foldsize=round(n/nfolds,0)
-  folds=rep(1,n-foldsize*(n-1))
-  for (i in 2:nfolds) {
-    folds=c(folds,rep(i,n/nfolds))
-  }
-  folds=sample(folds)
+  s <- sample(1:n,n,replace=FALSE)
+  folds <- cut(s,breaks=nfolds,labels=FALSE)
+  
   pred=matrix(0,len1,len2)
   for (i in 1:len1) {
     lam1=lambda1[i]
@@ -74,7 +72,7 @@ cv.springer <- function(clin=NULL, e, g, y, beta0, lambda1, lambda2, nfolds, fun
 
         e1=cbind(rep(1,dim(e.test)[1]),e.test)
 
-        for (i in 1:p1) {
+        for (m in 1:p1) {
           e.test=cbind(e.test,g.test[,i]*e1)
         }
 
@@ -85,7 +83,7 @@ cv.springer <- function(clin=NULL, e, g, y, beta0, lambda1, lambda2, nfolds, fun
           x.test=scale(cbind(clin.test,e.test))
         }
 
-        data.test=reformat(y.test, x.test)
+        data.test=reformat(k, y.test, x.test)
         x.test=data.test$x
         y.test=data.test$y
         mu=x.test%*%beta
@@ -96,5 +94,5 @@ cv.springer <- function(clin=NULL, e, g, y, beta0, lambda1, lambda2, nfolds, fun
   }
   lamb1=lambda1[which(pred==min(pred),arr.ind = TRUE)[1]]
   lamb2=lambda2[which(pred==min(pred),arr.ind = TRUE)[2]]
-  return(list("lam1"=lamb1,"lam2"=lamb2))
+  return(list("lam1"=lamb1,"lam2"=lamb2,"CV"=pred))
 }

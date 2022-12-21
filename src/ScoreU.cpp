@@ -44,7 +44,7 @@ Rcpp::List ScoreU(int n, arma::vec& k, arma::vec& y, arma::mat& x, int p, arma::
         }
         phi0=D.t()*res/n;
         phi+=D.t()*res/n;
-        dphi-=D.t()*D/n;
+        dphi+=D.t()*D/n;
         C+=phi0*phi0.t();
       }
       U=2*dphi.t()*pinv(C)*phi;
@@ -97,7 +97,7 @@ Rcpp::List ScoreU(int n, arma::vec& k, arma::vec& y, arma::mat& x, int p, arma::
           }
         }
         phi+=phi0;
-        dphi-=dphi0;
+        dphi+=dphi0;
         C+=phi0*phi0.t();
       }
       //std::cout << C(0,0) << endl;
@@ -166,7 +166,7 @@ Rcpp::List ScoreU(int n, arma::vec& k, arma::vec& y, arma::mat& x, int p, arma::
           }
         }
         phi+=phi0;
-        dphi-=dphi0;
+        dphi+=dphi0;
         C+=phi0*phi0.t();
       }
 

@@ -12,13 +12,13 @@
 #'
 #' @references
 #' Ren, J., Du, Y., Li, S., Ma, S., Jiang, Y. and Wu, C. (2019). Robust network-based regularization and variable selection for high-dimensional genomic data in cancer prognosis.
-#' \href{https://doi.org/10.1002/gepi.22194}{\emph{Genetic epidemiology}, 43(3), 276-291}
+#' \doi{10.1002/gepi.22194}{\emph{Genetic epidemiology}, 43(3), 276-291}
 #'
 #' Wu, C., Zhang, Q., Jiang, Y. and Ma, S. (2018). Robust network-based analysis of the associations between (epi) genetic measurements.
-#' \href{https://doi.org/10.1016/j.jmva.2018.06.009}{\emph{Journal of multivariate analysis}, 168, 119-130}
+#' \doi{10.1016/j.jmva.2018.06.009}{\emph{Journal of multivariate analysis}, 168, 119-130}
 #'
-#' Ren, J., He, T., Li, Y., Liu, S., Du, Y., Jiang, Y. and Wu, C. (2017). Network-based regularization for high dimensional SNP data in the case–control study of Type 2 diabetes.
-#' \href{https://doi.org/10.1186/s12863-017-0495-5}{\emph{BMC genetics}, 18(1), 44}
+#' Ren, J., He, T., Li, Y., Liu, S., Du, Y., Jiang, Y. and Wu, C. (2017). Network-based regularization for high dimensional SNP data in the case-control study of Type 2 diabetes.
+#' \doi{10.1186/s12863-017-0495-5}{\emph{BMC genetics}, 18(1), 44}
 #'
 #' @examples
 #' theta=runif(30,-4,4)

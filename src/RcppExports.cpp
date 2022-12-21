@@ -6,6 +6,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // NR
 arma::vec NR(arma::mat& matr1, arma::vec& matr2);
 RcppExport SEXP _springer_NR(SEXP matr1SEXP, SEXP matr2SEXP) {
