@@ -21,8 +21,11 @@ NULL
 #'
 #' @references
 #'
-#' Zhou, F., Lu, X., Ren, J., Fan, K., Ma, S. and Wu, C. (2021+). Sparse Group Variable Selection for Gene-Environment Interactions in the Longitudinal Study.
-#' {\emph{Genetic Epidemiology}} \doi{10.1002/gepi.22461}
+#' Zhou, F., Liu, Y., Ren, J., Wang, W., and Wu, C. (2023). Springer: An R package for bi-level variable selection of high-dimensional longitudinal data. 
+#' {\emph{Frontiers in Genetics}, 14, 1088223} \doi{10.3389/fgene.2023.1088223}
+#' 
+#' Zhou, F., Lu, X., Ren, J., Fan, K., Ma, S. and Wu, C. (2022). Sparse Group Variable Selection for Gene-Environment Interactions in the Longitudinal Study.
+#' {\emph{Genetic Epidemiology}, 46(5-6), 317-340} \doi{10.1002/gepi.22461}
 #'
 #' Zhou, F., Ren, J., Lu, X., Ma, S. and Wu, C. (2021). Gene-Environment Interaction: a Variable Selection Perspective.
 #' {\emph{Epistasis: Methods and Protocols, Springer US}} \doi{10.1007/978-1-0716-0947-7_13}
