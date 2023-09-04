@@ -2,7 +2,7 @@ Package: springer
 Type: Package
 Title: Sparse Group Variable Selection for Gene-Environment
         Interactions in the Longitudinal Study
-Version: 0.1.6
+Version: 0.1.8
 Author: Fei Zhou, Yuwen Liu, Xi Lu, Jie Ren, Cen Wu
 Maintainer: Fei Zhou <fei.zhou@outlook.com>
 Description: Recently, regularized variable selection has emerged as a powerful tool to identify and dissect gene-environment interactions. Nevertheless, in longitudinal studies with high dimensional genetic factors, regularization methods for G×E interactions have not been systematically developed. In this package, we provide the implementation of sparse group variable selection, based on both the quadratic inference function (QIF) and generalized estimating equation (GEE), to accommodate the bi-level selection for longitudinal G×E studies with high dimensional genomic features. Alternative methods conducting only the group or individual level selection have also been included. The core modules of the package have been developed in C++. 
@@ -14,8 +14,8 @@ BugReports: https://github.com/feizhoustat/springer/issues
 LazyData: true
 Imports: MASS,Rcpp
 LinkingTo: Rcpp, RcppArmadillo
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 NeedsCompilation: yes
-Packaged: 2021-09-14 09:04:06 UTC; fei
+Packaged: 2023-09-04 16:23:41 UTC; feizhou
 Repository: CRAN
-Date/Publication: 2021-09-14 11:20:02 UTC
+Date/Publication: 2023-09-04 17:07:28 UTC
