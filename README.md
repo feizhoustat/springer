@@ -14,12 +14,12 @@ Recently, regularized variable selection has emerged as a power tool to identify
 <!-- end list -->
 
     install.packages("devtools")
-    devtools::install_github("Yuwen-L/springer")
+    devtools::install_github("feizhoustat/springer")
 
 ## Example
 
     #install.packages("devtools")
-    #devtools::install_github("Yuwen-L/springer")
+    #devtools::install_github("feizhoustat/springer")
     library(springer)
     data("dat")
     e <- dat$e
