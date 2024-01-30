@@ -29,17 +29,17 @@ NULL
 #' where \eqn{Z_{ijv}} contains the \eqn{v}th genetic main factor and its interactions with the \eqn{q} environment factors for the \eqn{j}th measurement on the \eqn{i}th subject
 #' and \eqn{\eta_{v}} is the corresponding coefficient vector of length \eqn{1+q}.
 #'
-#' When {structure="bilevel"}, variable selection for genetic main effects and gene-environment interactions under the longitudinal response will be conducted on both individual and group levels (bi-level selection):
+#' When structure="bilevel", variable selection for genetic main effects and gene-environment interactions under the longitudinal response will be conducted on both individual and group levels (bi-level selection):
 #' \itemize{
 #' \item \strong{Group-level selection:} by determining whether \eqn{||\eta_{v}||_{2}=0}, we can know if the \eqn{v}th genetic variant has any effect at all.
 #' \item \strong{Individual-level selection:} investigate whether the \eqn{v}th genetic variant has main effect, G\eqn{\times}E interaction or both, by determining which components in \eqn{\eta_{v}} has non-zero values.
 #' }
-#' If {structure="group"}, only group-level selection will be conducted on \eqn{||\eta_{v}||_{2}}; if {structure="individual"}, only individual-level selection will be conducted on each \eqn{\eta_{vu}}, (\eqn{u=1,\ldots,q}).
+#' If structure="group", only group-level selection will be conducted on \eqn{||\eta_{v}||_{2}}; if structure="individual", only individual-level selection will be conducted on each \eqn{\eta_{vu}}, (\eqn{u=1,\ldots,q}).
 #'
-#' This function also provides choices for the framework that is used.  If {func="QIF"}, variable selection will be conducted within the quadratic inference functions framework; if {func="GEE"}, variable selection will be
+#' This function also provides choices for the framework that is used.  If func="QIF", variable selection will be conducted within the quadratic inference functions framework; if func="GEE", variable selection will be
 #' conducted within the generalized estimating equation framework.
 #'
-#' There are three options for the choice of the working correlation.  If {corr="exchangeable"}, the exchangeable working correlation will be applied; if {corr="AR-1"}, the AR-1 working correlation will be adopted; if {corr="independence"},
+#' There are three options for the choice of the working correlation.  If corr="exchangeable", the exchangeable working correlation will be applied; if corr="AR-1", the AR-1 working correlation will be adopted; if corr="independence",
 #' the independence working correlation will be used.
 #' Please check the references for more details.
 #' @examples

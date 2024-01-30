@@ -49,7 +49,7 @@ NULL
 #' {\emph{Statistical Applications in Genetics and Molecular Biology}, 17(2)} \doi{10.1515/sagmb-2017-0008}
 #'
 #' Ren, J., He, T., Li, Y., Liu, S., Du, Y., Jiang, Y. and Wu, C. (2017). Network-based regularization for high dimensional SNP data in the case-control study of Type 2 diabetes.
-#' \doi{10.1186/s12863-017-0495-5}{\emph{BMC genetics}, 18(1), 44}
+#' {\emph{BMC genetics}, 18(1), 44} \doi{10.1186/s12863-017-0495-5}
 #'
 #' Wu, C., Shi, X., Cui, Y. and Ma, S. (2015). A penalized robust semiparametric approach for gene-environment interactions.
 #' {\emph{Statistics in Medicine}, 34 (30): 4016-4030} \doi{10.1002/sim.6609}

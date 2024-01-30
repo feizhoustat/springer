@@ -1,3 +1,6 @@
+# springer 0.1.9 (2024-01-26)
+ * Fixed the problems in CRAN checks
+
 # springer 0.1.8 (2023-09-04)
  * Updated reference list.
 

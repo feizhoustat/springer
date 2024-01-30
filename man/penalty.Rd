@@ -39,7 +39,7 @@ When {structure="bilevel"}, sparse group MCP is adopted and variable selection f
 \item \strong{Group-level selection:} If the \eqn{v}th genetic factor has any effect at all (associated with the response or not) can be determined by whether \eqn{||\eta_{v}||_{2}=0}.
 \item \strong{Individual-level selection:} whether the \eqn{v}th genetic variant has main effect, G\eqn{\times}E interaction or both can be determined by the nonzero componet.
 }
-If {structure="group"}, group MCP will be used and only group-level selection will be conducted on \eqn{||\eta_{v}||_{2}}; if {structure="individual"}, MCP will be adopted and only individual-level selection will be conducted on each \eqn{\eta_{vu}}, (\eqn{u=1,\ldots,q}).
+If structure="group", group MCP will be used and only group-level selection will be conducted on \eqn{||\eta_{v}||_{2}}; if structure="individual", MCP will be adopted and only individual-level selection will be conducted on each \eqn{\eta_{vu}}, (\eqn{u=1,\ldots,q}).
 
 The minimax concave penalty (MCP) is adopted as the baseline penalty function in the springer package. Methods based on other popular choices, such as SCAD and LASSO, will be examined in the future.
 }
