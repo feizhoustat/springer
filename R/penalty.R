@@ -13,7 +13,7 @@
 #' @return
 #' \item{H}{the penalty function.}
 #' @details
-#' When {structure="bilevel"}, sparse group MCP is adopted and variable selection for longitudinal data including both genetic main effects and gene-environment interactions will be conducted on both individual and group levels (bi-level selection):
+#' When structure="bilevel", sparse group MCP is adopted and variable selection for longitudinal data including both genetic main effects and gene-environment interactions will be conducted on both individual and group levels (bi-level selection):
 #' \itemize{
 #' \item \strong{Group-level selection:} If the \eqn{v}th genetic factor has any effect at all (associated with the response or not) can be determined by whether \eqn{||\eta_{v}||_{2}=0}.
 #' \item \strong{Individual-level selection:} whether the \eqn{v}th genetic variant has main effect, G\eqn{\times}E interaction or both can be determined by the nonzero componet.
